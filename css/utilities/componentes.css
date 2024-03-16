@@ -1,0 +1,28 @@
+.buttons{
+    padding: 6px 20px;
+    border: 1px solid var(--cor-p1);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgb(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.buttons-2{
+    padding: 6px 20px;
+    background: var(--cor-p1);
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgb(0, 0, 0, .1);
+    color: var(--cor-00);
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background: var(--cor-p1);
+    color: var(--cor-00);
+    transition: 0.2s;
+}
+
+.buttons-2:hover{
+    color: var(--cor-02);
+    background: var(--cor-p2);
+    transition: 0.2s;
+}

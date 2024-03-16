@@ -1,0 +1,81 @@
+.introducao{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 40px 120px;
+    box-sizing: border-box;
+    max-width: 1400px;
+
+    img{
+        display: block;
+        width: 410px;
+        height: 100%;
+        object-fit:cover;
+    }
+}
+
+.introducao-texto h1{
+    padding-bottom: 20px;
+}
+
+.botoes{
+    margin-top: 180px;
+    grid-column: 1/-1;
+
+    a{
+        padding: 12px 20px;
+    }
+}
+
+.botao-1{
+    border-radius: 14px;
+}
+
+.botao-1:hover{
+    background-color: var(--cor-p3);
+    color: var(--cor-00);
+    transition: 0.2s;
+}
+
+.botao{
+    margin-left: 40px;
+    background: var(--cor-01);
+    border: .2 solid var(--cor-02);
+    color: var(--cor-03);
+    box-shadow: .5px .5px .5px .5px var(--cor-02);
+    transition: .2s;
+    border-radius: 14px;
+}
+
+.botao:hover{
+    background-color: var(--cor-01);
+}
+
+.botao::before{
+    content: '';
+    height: 22px;
+    width: 24px;
+    display: inline-block;
+    background: url('../../img/introduction/play_circle_FILL0_wght400_GRAD0_opsz24.svg') no-repeat;
+    align-items: center;
+    margin-right: 8px;
+    margin-bottom: -4px;
+}
+
+@media (max-width: 800px){
+    .introducao{
+        grid-template-columns: 1fr;
+        padding: 60px;
+    }
+
+    .introducao img{
+        flex: 1;
+        min-width: 100%;
+    }
+
+    .botoes{
+        margin-top: 60px;
+        text-align: center;
+    }
+}
