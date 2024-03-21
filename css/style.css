@@ -12,4 +12,5 @@
 /* Introdução */
 @import './home/introducao.css';
 
-
+/* Home */
+@import './home/parceiros.css';

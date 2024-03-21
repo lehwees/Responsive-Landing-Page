@@ -1,0 +1,23 @@
+.parceiros{
+    background: var(--cor-p1);
+    margin-top: 40px;
+    padding-left: 60px;
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    img{
+        width: 120px;
+        height: 80px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px){
+    .parceiros{
+        padding-left: 0px;
+    }
+}
+
